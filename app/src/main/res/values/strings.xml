@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">sideHustle</string>
+    <string name="home">Home</string>
+    <string name="player">Player</string>
+    <string name="notification">Notification</string>
+    <string name="account">Account</string>
+    <string name="album">Album</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="download">Download</string>
+    <string name="favorite">Favorite</string>
+    <string name="play_all">Play All</string>
+    <string name="song">Happy Birth Day Song</string>
+    <string name="tracks">Tracks</string>
+    <string name="username">\@bijendshrestha</string>
+    <string name="name">Bijen Shrestha</string>
+    <string name="account_info">Account Info</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

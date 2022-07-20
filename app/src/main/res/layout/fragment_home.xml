@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/home"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:background="@drawable/edit_background"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_home" />
+
+    <TextView
+        android:id="@+id/text_this_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="This Month"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/search_bar"
+        app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintStart_toStartOf="@id/text_this_month"
+        app:layout_constraintTop_toBottomOf="@id/text_this_month">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/image_sun_rise"
+                android:layout_width="230dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_sun_rise"
+                app:layout_constraintStart_toStartOf="@id/text_this_month"
+                app:layout_constraintTop_toBottomOf="@id/text_this_month" />
+
+            <TextView
+                android:id="@+id/sun_rise_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Sunrise Special"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/image_sun_rise"
+                app:layout_constraintStart_toStartOf="@id/image_sun_rise" />
+
+
+            <ImageView
+                android:id="@+id/image_mountain"
+                android:layout_width="230dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_mountain"
+                app:layout_constraintStart_toEndOf="@id/image_sun_rise"
+                app:layout_constraintTop_toBottomOf="@id/text_this_month" />
+
+            <TextView
+                android:id="@+id/mountain_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Mountain Special"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/image_mountain"
+                app:layout_constraintStart_toStartOf="@id/image_mountain" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/text_Recommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Recommendation"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/text_this_month"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_1" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintStart_toStartOf="@id/text_Recommendation"
+        app:layout_constraintTop_toBottomOf="@id/text_Recommendation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/image_child"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_child"
+                app:layout_constraintStart_toStartOf="@id/text_Recommendation"
+                app:layout_constraintTop_toBottomOf="@id/text_Recommendation" />
+
+            <ImageView
+                android:id="@+id/image_jatra"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_jatra"
+                app:layout_constraintStart_toEndOf="@id/image_child"
+                app:layout_constraintTop_toBottomOf="@id/text_Recommendation" />
+
+            <ImageView
+                android:id="@+id/image_boat"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_boat"
+                app:layout_constraintStart_toEndOf="@id/image_jatra"
+                app:layout_constraintTop_toBottomOf="@id/text_Recommendation" />
+
+            <ImageView
+                android:id="@+id/image_nepal"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_nepal"
+                app:layout_constraintStart_toEndOf="@id/image_boat"
+                app:layout_constraintTop_toBottomOf="@id/text_Recommendation" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/text_group_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/image_child"
+                app:layout_constraintTop_toBottomOf="@id/image_child">
+
+                <TextView
+                    android:id="@+id/text_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Culture Special"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_child_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track 7"
+                    android:textColor="@color/detail"
+                    app:layout_constraintTop_toBottomOf="@id/text_child" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/image_jatra"
+                app:layout_constraintTop_toBottomOf="@id/image_jatra">
+
+                <TextView
+                    android:id="@+id/text_jatra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jatra Special"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_jatra_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track 12"
+                    android:textColor="@color/detail"
+                    app:layout_constraintTop_toBottomOf="@id/text_jatra" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/image_boat"
+                app:layout_constraintTop_toBottomOf="@id/image_boat">
+
+                <TextView
+                    android:id="@+id/text_boat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adventure Special"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_adventure_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track 13"
+                    android:textColor="@color/detail"
+                    app:layout_constraintTop_toBottomOf="@id/text_boat" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/image_nepal"
+                app:layout_constraintTop_toBottomOf="@id/image_nepal">
+
+                <TextView
+                    android:id="@+id/text_nepal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nepal Special"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_nepal_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track 20"
+                    android:textColor="@color/detail"
+                    app:layout_constraintTop_toBottomOf="@id/text_nepal" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/text_child"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:layout_marginLeft="12dp"-->
+    <!--        android:layout_marginTop="7dp"-->
+    <!--        android:text="Culture Special"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/image_child"-->
+    <!--        />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/text_child_Detail"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:layout_marginLeft="12dp"-->
+    <!--        android:text="Track 7"-->
+    <!--        android:textColor="@color/detail"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/text_child"-->
+    <!--        />-->
+
+
+    <TextView
+        android:id="@+id/text_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Popular"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/text_this_month"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_2" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintStart_toStartOf="@id/text_popular"
+        app:layout_constraintTop_toBottomOf="@id/text_popular">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/image_wild"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_wild"
+                app:layout_constraintStart_toStartOf="@id/text_popular"
+                app:layout_constraintTop_toBottomOf="@id/text_popular" />
+
+            <ImageView
+                android:id="@+id/image_lake"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_lake"
+                app:layout_constraintStart_toEndOf="@id/image_wild"
+                app:layout_constraintTop_toBottomOf="@id/text_popular" />
+
+            <ImageView
+                android:id="@+id/image_people"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_people"
+                app:layout_constraintStart_toEndOf="@id/image_lake"
+                app:layout_constraintTop_toBottomOf="@id/text_popular" />
+
+            <ImageView
+                android:id="@+id/image_bijen"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_outline"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_bijen"
+                app:layout_constraintStart_toEndOf="@id/image_people"
+                app:layout_constraintTop_toBottomOf="@id/text_popular" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/text_group_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/image_wild"
+                app:layout_constraintTop_toBottomOf="@id/image_wild">
+
+                <TextView
+                    android:id="@+id/text_wild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wild Special"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_wild_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track 5"
+                    android:textColor="@color/detail"
+                    app:layout_constraintTop_toBottomOf="@id/text_wild" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/image_lake"
+                app:layout_constraintTop_toBottomOf="@id/image_lake">
+
+                <TextView
+                    android:id="@+id/text_lake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nature Special"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_lake_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track 12"
+                    android:textColor="@color/detail"
+                    app:layout_constraintTop_toBottomOf="@id/text_lake" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/image_people"
+                app:layout_constraintTop_toBottomOf="@id/image_people">
+
+                <TextView
+                    android:id="@+id/text_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="People Special"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_people_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track 10"
+                    android:textColor="@color/detail"
+                    app:layout_constraintTop_toBottomOf="@id/text_people" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/image_bijen"
+                app:layout_constraintTop_toBottomOf="@id/image_bijen">
+
+                <TextView
+                    android:id="@+id/text_bijen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bijen Special"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_bijen_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track 10"
+                    android:textColor="@color/detail"
+                    app:layout_constraintTop_toBottomOf="@id/text_bijen" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </HorizontalScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/edit_background.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/player_background.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/rectangle_round_outline.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/round_corner_with_color.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/round_corner_with_color_black.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/round_corner_with_color_blue.xml" value="0.286" />
+        <entry key="app/src/main/res/drawable/round_outline.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/square_round_outline.xml" value="0.199" />
+        <entry key="app/src/main/res/layout/activity_graph.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.23934723481414324" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_page_one.xml" value="0.20226898193359372" />
+        <entry key="app/src/main/res/layout/activity_player.xml" value="0.27412414550781256" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/activity_track.xml" value="0.25158228860258114" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/fragment_player.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/fragment_profile_edit.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/fragment_track.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/layout_playlist.xml" value="0.285782868905983" />
+        <entry key="app/src/main/res/layout/main_layout.xml" value="0.3029891304347826" />
+        <entry key="app/src/main/res/layout/popup_share.xml" value="0.35303627393557546" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.199" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2424112868747328" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
